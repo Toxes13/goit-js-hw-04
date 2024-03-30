@@ -1,22 +1,23 @@
-function checkForSpam(message) {
-
-    const messageReg = message.toLowerCase();
-    const hasSpam = messageReg.includes("spam") || messageReg.includes("sale");
-
-    if (hasSpam) {
-        return `true`;
-    }
-    else {
-        return `false`;
-    }
-}
-
-console.log(checkForSpam("Latest technology news")); // false
-console.log(checkForSpam("JavaScript weekly newsletter")); // false
-console.log(checkForSpam("Get best sale offers now!")); // true
-console.log(checkForSpam("Amazing SalE, only tonight!")); // true
-console.log(checkForSpam("Trust me, this is not a spam message")); // true
-console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
-console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+const profile = {
+    username: "Jacob",
+    playTime: 300,
+};
 
 
+ changeUsername() {
+    for (name of this){
+      if (this.username === oldName)
+            potion.name = newName;
+        
+        
+getInfo()
+return ${username} has ${amount} active hours!
+
+
+console.log(profile.getInfo()); // "Jacob has 300 active hours!"
+
+profile.changeUsername("Marco");
+console.log(profile.getInfo()); // "Marco has 300 active hours!"
+
+profile.updatePlayTime(20);
+console.log(profile.getInfo()); // "Marco has 320 active hours!"
