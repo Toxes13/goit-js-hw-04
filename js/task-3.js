@@ -1,17 +1,25 @@
 const profile = {
-    username: "Jacob",
-    playTime: 300,
+  username: "Jacob",
+  playTime: 300,
+
+  getInfo() {
+    return `${username} has ${playTime} active hours!`
+  }
+
+  changeUsername(newName) {
+    for (const name of profile) {
+      if (this.username !== newName) {
+        this.username = newName;
+      }
+    }
+  }
+  
+  updatePlayTime(hours)
 };
 
 
- changeUsername() {
-    for (name of this){
-      if (this.username === oldName)
-            potion.name = newName;
-        
-        
-getInfo()
-return ${username} has ${amount} active hours!
+
+
 
 
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
@@ -21,3 +29,4 @@ console.log(profile.getInfo()); // "Marco has 300 active hours!"
 
 profile.updatePlayTime(20);
 console.log(profile.getInfo()); // "Marco has 320 active hours!"
+
